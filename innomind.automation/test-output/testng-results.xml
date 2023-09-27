@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-09-27T17:10:30 IST" name="Default suite" finished-at="2023-09-27T17:11:43 IST" duration-ms="72907">
+    <groups>
+    </groups>
+    <test started-at="2023-09-27T17:10:30 IST" name="Default test" finished-at="2023-09-27T17:11:43 IST" duration-ms="72907">
+      <class name="com.aia.projects.abi.testcases.SignUpUserTest">
+        <test-method is-config="true" signature="createDriver(java.lang.String)[pri:0, instance:com.aia.projects.abi.testcases.SignUpUserTest@37c36608]" started-at="2023-09-27T17:10:30 IST" name="createDriver" finished-at="2023-09-27T17:10:36 IST" duration-ms="6339" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDriver -->
+        <test-method signature="signUp_NewUser()[pri:1, instance:com.aia.projects.abi.testcases.SignUpUserTest@37c36608]" started-at="2023-09-27T17:10:36 IST" name="signUp_NewUser" description="ABI_TC01_SignUpNewUser" finished-at="2023-09-27T17:11:42 IST" duration-ms="65608" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Timeout waiting for the element ready to click. By.xpath: //button[text(),'I consent to cookies ']]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Timeout waiting for the element ready to click. By.xpath: //button[text(),'I consent to cookies ']
+at org.testng.Assert.fail(Assert.java:111)
+at com.innomind.keywords.WebUI.waitForElementClickable(WebUI.java:2269)
+at com.innomind.projects.aia.pages.SignIn.LoginPageABI.signInNewUser_ABI(LoginPageABI.java:82)
+at com.aia.projects.abi.testcases.SignUpUserTest.signUp_NewUser(SignUpUserTest.java:48)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUp_NewUser -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:com.aia.projects.abi.testcases.SignUpUserTest@37c36608]" started-at="2023-09-27T17:11:43 IST" name="closeDriver" finished-at="2023-09-27T17:11:43 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- com.aia.projects.abi.testcases.SignUpUserTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

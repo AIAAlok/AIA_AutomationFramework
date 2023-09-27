@@ -1,0 +1,12 @@
+
+innomind.automation/ExportData/Images/*.png
+*.prefs
+*.log
+*.html
+*.png
+*.json
+.allure
+/*/allure-results/
+*.settings
+*.classpath
+*.project

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Regression Tests AIA]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.innomind.listeners.AnnotationTransformer"/>
+  </listeners>
+  <test thread-count="5" parallel="methods" name="Login Test AIA - ABI(failed)">
+    <parameter name="BROWSER" value="chrome"/>
+    <classes>
+      <class name="com.aia.projects.abi.testcases.SignUpUserTest">
+        <methods>
+          <include name="createDriver"/>
+          <include name="closeDriver"/>
+          <include name="signUp_NewUser"/>
+        </methods>
+      </class> <!-- com.aia.projects.abi.testcases.SignUpUserTest -->
+    </classes>
+  </test> <!-- Login Test AIA - ABI(failed) -->
+</suite> <!-- Failed suite [Regression Tests AIA] -->
